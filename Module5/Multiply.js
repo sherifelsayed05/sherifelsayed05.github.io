@@ -1,11 +1,17 @@
-var table = 3;             // Unit of table
+var x,y;
+      x= prompt("Choose a number");
+      y= prompt("Choose anothe number");
+      var result = Number(x)++ Number(y);
+      alert("The result is","+result+");
+      
+    </script>
 
 operator = GetValueFromUser("operator");
-table = GetValueFromUser("table")
+table = GetValueFromUser("number")
 
 // Write the message into the page
 var el = document.getElementById('blackboard');
-el.innerHTML = GetTableContent(operator, table);
+el.innerHTML = GetTableContent(operator, number);
 
 function GetValueFromUser(valueType) {
   var greetingMessage = 'Hello. How are you?';
@@ -14,14 +20,14 @@ function GetValueFromUser(valueType) {
   }
   else
   {
-    greetingMessage += "Enter table";
+    greetingMessage += "Enter a number";
   }
   return prompt(greetingMessage);
 }
 
 function GetTableContent(operator, table) {
   var i = 1;                 // Set counter to 1
-  var msg = '';              // Message  
+ var msg = '<h2>Multiplication Table</h2>';  
   if (operator === 'addition') {
     // Do addition
     while (i < 11) {
