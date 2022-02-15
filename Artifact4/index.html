@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">   
    <head>
+             <meta charset="utf-8">
+
       <title>Form Validation</title>      
       <link rel="Stylesheet" href="Contact4.css"/>     
    </head>
@@ -9,49 +11,56 @@
   
   
    <body>
-      <form action = "/cgi-bin/test.cgi" name= "myForm" id="myForm" onsubmit = "return(validate());">
-         <table cellspacing = "2" cellpadding = "2" border = "1">
+     <form id="myform" action="ty.html" onsubmit="isValid();">
+        
             
             <tr>
-               <td>First Name</td>
-               <td><input type = "text" name = "Name" id="Name"/></td>
-            </tr>
+              <td> First Name:</td>
+              <td> <input type = "text" name = "Name" id="Name"/></td>
+           </tr>
+           <div class="warning" id="firstName"></div>
            
            <tr>
-               <td>Last Name</td>
+               <td>Last Name:</td>
                <td><input type = "text" name = "lname"  id="lname" /></td>
             </tr>
+           <div class="warning" id="lastName"></div>
             
            <tr>
-             <td>Email</td>
+             <td>Email:</td>
                <td><input type = "text" name = "email" id="email"/></td>
             </tr>
-            
+            <div class="warning" id="emailterror"></div>
             <tr>
-               <td>Phone Number</td>
+               <td>Phone Number:</td>
                <td><input type = "text" name = "phonenumber" id="phonenumber"/></td>
             </tr>
+           <div class="warning" id="phoneNumber"></div>
            <tr>
-               <td>Username</td>
+               <td>Username:</td>
                <td><input type = "text" name = "username" id="username"/></td>
             </tr>
+           <div class="warning" id="username"></div>
            <tr>
-               <td>Password</td>
+               <td>Password:</td>
                <td><input type = "password" name = "password" id="password"/></td>
             </tr> 
+           <div class="warning" id="password"></div>
            <tr>
-               <td>Address</td>
+               <td>Address:</td>
                <td><input type = "text" name = "address" id="address"/></td>
             </tr>
+           <div class="warning" id="address"></div>
            <tr>
-               <td>City</td>
+               <td>City:</td>
                <td><input type = "text" name = "city" id="city"/></td>
             </tr>
+           <div class="warning" id="city"></div>
            <tr>
-               <td>State</td>
+               <td>State:</td>
                <td>
                  <select name="State">
-                   <option value ="-1" selected> choose yours </option>
+                   <option value ="-1" selected> [choose yours]</option>
                    <option value ="1"> Alabama</option>
                    <option value ="2"> Alaska</option> 
                    <option value ="3"> Arizona</option> 
@@ -108,19 +117,19 @@
             </tr>
            
            
-           
+           <div class="warning" id="state"></div>
             
             <tr>
-               <td>Zip Code</td>
+               <td>Zip Code:</td>
                <td><input type = "text" name = "zip" id="zip"/></td>
             </tr>
-            
+            <div class="warning" id="zip"></div>
            
            <tr>
-               <td>Country</td>
+               <td>Country:</td>
                <td>
                   <select name = "country">
-                     <option value = "-1" selected>choose yours</option>
+                     <option value = "-1" selected>[choose yours]</option>
                      <option value = "1">USA</option>
                      <option value = "2">UK</option>
                      <option value = "3">INDIA</option>
@@ -129,23 +138,26 @@
                   </select>
                </td>
             </tr>
-            
+            <div class="warning" id="country"></div>
            
            <tr>
-               <td>Comments</td>
+               <td>Comments:</td>
                <td><input type = "text" name = "comments" /></td>
             </tr>
-            
-           
-           
-          </table>
-         <tr>
-               <td> </td>
+            <div class="warning" id="comments"></div>
+           <tr>
+               <td> Submit form here! </td>
                <td><input type = "submit" value = "Submit" /></td>
             </tr>
+           
+           <div class="warning" id="submiterror"></div>
+           
+          
+         
         
-        <script src="Contact4.js"></script>
+        
         
        </form>
+     <script src="Contact4.js"</script>
     </body>
 </html>
