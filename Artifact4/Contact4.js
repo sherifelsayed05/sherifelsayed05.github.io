@@ -1,55 +1,82 @@
-function validation(){
-  
-  var name = document.getElementById("name").value;
-  var lname = document.getElementById("lname").value;
-  var email = document.getElementById("email").value;
-  var phonenumber = document.getElementById("phonenumber").value;
-  var username = document.getElementById("username").value;
-  var password" = document.getElementById("password").value;
-  var address = document.getElementById("address").value;
-  var city = document.getElementById("city").value;
-  var state = document.getElementById("state").value;
-  var zipcode = document.getElementById("zipcode").value;
-  var country = document.getElementById("country").value;
-  var comments = document.getElementById("comments").value;
-  var error_message = document.getElementById("error_message");
-  var text; 
 
-error_message.style.padding = "10px"; 
-  if (name.length <5){
-    text = "Please Enter a Valid Name "
-    error_message.innerHTMl = text; 
-    return false;
-  }
-if (lname.length <5){
-    text = "Please Enter a Valid Last Name ";
-    error_message.innerHTMl = text; 
-    return false;
-  }
-  if (email.indexof("@") == -1 || email.length < 6){
-    text = "Please Enter a Valid Email Address ";
-    error_message.innerHTMl = text; 
-    return false;
-  }
-  if (isNaN(phone) || phone.length !=10){
-    text = "Please Enter a Valid Phone Number ";
-    error_message.innerHTMl = text; 
-    return false;
-  }
-  if (lname.length <5){
-    text = "Please Enter a Valid Last Name ";
-    error_message.innerHTMl = text; 
-    return false;
-  }
-  if (lname.length <5){
-    text = "Please Enter a Valid Last Name ";
-    error_message.innerHTMl = text; 
-    return false;
-  }
-  alert ("Form Submitted!)")
-  return true; 
+
+  
+
+function validate() {
+  
+  if( document.myForm.Name.value === "" ) {
+            alert( "Please provide your first name!" );
+            document.myForm.Name.focus() ;
+            return false;
+         }
+  
+ 
+  if( document.myForm.lname.value === "" ) {
+            alert( "Please provide your last name!" );
+            document.myForm.lname.focus() ;
+            return false;
+      }
+  
+  
+  
+   if( document.myForm.email.value === "" ) {
+            alert( "Please provide your Email!" );
+            document.myForm.email.focus() ;
+            return false;
+      
+         }
+  
+   if( document.myForm.phonenumber.value === "" || isNaN( document.myForm.phonenumber.value ) ||
+            document.myForm.phonenumber.value.length != 10 ) {
+            
+            alert( "Please provide a phonenumber in the format ##########." );
+            document.myForm.phonenumber.focus() ;
+            return false;
+         }
+ 
+  if( document.myForm.username.value === "" ) {
+            alert( "Please provide your username" );
+            document.myForm.username.focus() ;
+            return false;
+         }
+  if( document.myForm.password.value === "" ) {
+            alert( "Please provide your Password" );
+            document.myForm.password.focus() ;
+            return false;
+    
+         }
+  if( document.myForm.address.value === "" ) {
+            alert( "Please provide your Address" );
+            document.myForm.address.focus() ;
+            return false;
+         }
+  if( document.myForm.city.value === "" ) {
+            alert( "Please provide your City" );
+            document.myForm.city.focus() ;
+            return false;
+         }
+  if( document.myForm.State.value === "-1" ) {
+            alert( "Please provide your State" );
+            
+            return false;
+         }
+  
+  if( document.myForm.zip.value === "" || isNaN( document.myForm.zip.value ) ||
+            document.myForm.zip.value.length != 5 ) {
+            
+            alert( "Please provide a zip in the format #####." );
+            document.myForm.zip.focus() ;
+            return false;
+         }
+  
+  if( document.myForm.Country.value === "-1" ) {
+            alert( "Please provide your country" );
+            return false;
+         }
+            return ( true );
 }
-  
+ 
+        
+   
 
 
-  
