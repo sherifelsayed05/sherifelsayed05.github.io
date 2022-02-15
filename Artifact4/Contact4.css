@@ -1,8 +1,44 @@
-td{
+  td{
   
   text-align:left;
   
   }
+
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid indigo;
+}
+
+select {
+  width: 90%;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type=password] {
+  border: none;
+  border-bottom: 2px solid indigo; 
+}
+
+
+input[type=text] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box; 
+  
+  
+}
+
 
 
 
