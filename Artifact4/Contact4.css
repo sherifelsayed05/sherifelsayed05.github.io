@@ -6,11 +6,11 @@
 
 input[type=text] {
   border: none;
-  border-bottom: 2px solid indigo;
+  border-bottom: 2px solid blue;
 }
 
 select {
-  width: 40%;
+  width: 100%;
   padding: 5px 10px;
   border: none;
   border-radius: 4px;
@@ -19,19 +19,19 @@ select {
 
 input[type=password] {
   border: none;
-  border-bottom: 2px solid indigo; 
+  border-bottom: 2px solid blue; 
 }
 
 
 input[type=text] {
-  width: 40%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
 }
 
 input[type=password] {
-  width: 40%;
+  width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box; 
