@@ -1,52 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>Contact Us Validation</title>
-    <link rel="Stylesheet" href="Contact4.css">
-    <script src="Contact4.js"> </script>
-  </head>
+<html lang="en">   
+   <head>
+      <title>Form Validation</title>      
+      <link rel="Stylesheet" href="Contact4.css"/>     
+   </head>
   
-  <body>
-   
-    <div class="wrapper"
-         <h2>Contact Us</h2>
-  <div id="error_message"></div>
-  <form id="myform" onsubmit="return validation()">
-      <table cellspacing = "2" cellpadding = "2" border = "1">
-    <div class="input_field">
-      <input type="text" placeholder="Name" id="name">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Last Name" id="lname">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Email" id="email">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Phone Number" id="phone number">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Username" id="username">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Password" id="password">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Address" id="address">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="City" id="city">
-    </div>
-    <div class="input_field">
-      <input type="text" placeholder="Zip Code" id="zipcode"><br>
-    </div>
-        <div>
-   <tr>
-               <td align = "center">State</td>
+  <h2>Form Validation</h2>
+  
+  
+   <body>
+      <form action = "/cgi-bin/test.cgi" name= "myForm" id="myForm" onsubmit = "return(validate());">
+         <table cellspacing = "2" cellpadding = "2" border = "1">
+            
+            <tr>
+               <td>First Name</td>
+               <td><input type = "text" name = "Name" id="Name"/></td>
+            </tr>
+           
+           <tr>
+               <td>Last Name</td>
+               <td><input type = "text" name = "lname"  id="lname" /></td>
+            </tr>
+            
+           <tr>
+             <td>Email</td>
+               <td><input type = "text" name = "email" id="email"/></td>
+            </tr>
+            
+            <tr>
+               <td>Phone Number</td>
+               <td><input type = "text" name = "phonenumber" id="phonenumber"/></td>
+            </tr>
+           <tr>
+               <td>Username</td>
+               <td><input type = "text" name = "username" id="username"/></td>
+            </tr>
+           <tr>
+               <td>Password</td>
+               <td><input type = "password" name = "password" id="password"/></td>
+            </tr> 
+           <tr>
+               <td>Address</td>
+               <td><input type = "text" name = "address" id="address"/></td>
+            </tr>
+           <tr>
+               <td>City</td>
+               <td><input type = "text" name = "city" id="city"/></td>
+            </tr>
+           <tr>
+               <td>State</td>
                <td>
                  <select name="State">
-                   <option value ="-1" selected> [choose yours] </option>
+                   <option value ="-1" selected> choose yours </option>
                    <option value ="1"> Alabama</option>
                    <option value ="2"> Alaska</option> 
                    <option value ="3"> Arizona</option> 
@@ -99,39 +104,48 @@
                    <option value ="49"> Wyoming</option> 
                    <option value ="51"> Washington DC</option
                  </select>
-           
-        </div>
-                   </td>
+             </td>
             </tr>
-   
-    <div>
-      
-          <tr>
-               <td align = "left">Country</td>
+           
+           
+           
+            
+            <tr>
+               <td>Zip Code</td>
+               <td><input type = "text" name = "zip" id="zip"/></td>
+            </tr>
+            
+           
+           <tr>
+               <td>Country</td>
                <td>
-                  <select name = "Country">
-                     <option value = "-1" selected>[choose yours]</option>
+                  <select name = "country">
+                     <option value = "-1" selected>choose yours</option>
                      <option value = "1">USA</option>
                      <option value = "2">UK</option>
                      <option value = "3">INDIA</option>
-                    <option value = "4"> China</option>
-                    <option value ="5"> Egypt</option>
-                 </select>
-              </td>
-         </tr>
-          </div>
-        <tr>
-     <div class="input_field">
-       <textarea id="comments" placeholder="Comments"></textarea> 
-    </div>
-        </tr>
-<tr>
-     <div class="btn">
-    <input type="submit">
-    </div>
-        </tr>
-  </body>
-   
-  </forms>
- 
+                     <option value = "4"> China</option>
+                     <option value = "5"> Egypt</option> 
+                  </select>
+               </td>
+            </tr>
+            
+           
+           <tr>
+               <td>Comments</td>
+               <td><input type = "text" name = "comments" /></td>
+            </tr>
+            
+           
+           
+          </table>
+         <tr>
+               <td> </td>
+               <td><input type = "submit" value = "Submit" /></td>
+            </tr>
+        
+        <script src="Contact4.js"</script>
+        
+       </form>
+    </body>
 </html>
