@@ -55,6 +55,50 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
+#errorName{
+color:red;
+}
 
+#errorlname{
+color:red;
+}
 
+#errorEmail{
+color:red;
+}
 
+#errorPhone{
+color:red;
+}
+
+#errorUser{
+color:red;
+}
+
+#errorPass{
+color:red;
+}
+
+#errorAddress{
+color:red;
+}
+
+#errorCity{
+color:red;
+}
+
+#errorState{
+color:red;
+}
+
+#errorZip{
+color:red;
+}
+
+#errorCountry{
+color:red;
+}
+
+#errorSubmit{
+color:red;
+}
