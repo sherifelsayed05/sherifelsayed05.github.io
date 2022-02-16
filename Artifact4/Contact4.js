@@ -1,6 +1,5 @@
 
 
-  
 
 function validate() {
   
@@ -9,6 +8,20 @@ function validate() {
             document.myForm.Name.focus() ;
             return false;
          }
+  function allLetter(inputtxt)
+  {
+   var letters = /^[A-Za-z]+$/;
+   if(inputtxt.value.match(letters))
+     {
+      return true;
+     }
+   else
+     {
+     alert("message");
+     return false;
+     }
+  }
+  
   
  
   if( document.myForm.lname.value === "" ) {
@@ -69,12 +82,12 @@ function validate() {
             return false;
          }
   
-  if( document.myForm.Country.value === "-1" ) {
-            alert( "Please provide your country" );
+  if( document.myForm.country.value == "-1" ) {
+            alert( "Please provide your country!" );
             return false;
          }
-            return ( true );
-}
+         return( true );
+      }
  
         
    
