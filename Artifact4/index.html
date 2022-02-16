@@ -1,61 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">   
    <head>
-      <meta charset="utf-8">
-      <meta name="description" content="Artifact 04 - Contact Us">  
+     <meta charset="utf-8">
+<meta name="description" content="Artifact 04 - Contact Us">
       <title>Form Validation</title>      
-      <link rel="Stylesheet" href="Contact4.css"/>     
+      <link rel="Stylesheet" href="Contact4.css"/>  
+  
    </head>
   
   <h2>Form Validation</h2>
   
   
    <body>
-     <form id="myform" action="ty.html" onsubmit="isValid();">
+     <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
         
             <table cellspacing = "1" cellpadding = "1" border = "1">
             <tr>
               <td> First Name:</td>
               <td> <input type = "text" name = "Name" id="Name"/></td>
            </tr>
-           <div class="warning" id="firstName"></div>
+           <div id="errorName"></div>
            
            <tr>
                <td>Last Name:</td>
                <td><input type = "text" name = "lname"  id="lname" /></td>
             </tr>
-           <div class="warning" id="lastName"></div>
+           <div id="errorlname"></div>
             
            <tr>
              <td>Email:</td>
                <td><input type = "text" name = "email" id="email"/></td>
             </tr>
-            <div class="warning" id="emailterror"></div>
+            <div id="errorEmail"></div>
             <tr>
                <td>Phone Number:</td>
                <td><input type = "text" name = "phonenumber" id="phonenumber"/></td>
             </tr>
-           <div class="warning" id="phoneNumber"></div>
+           <div id="errorPhone"></div>
            <tr>
                <td>Username:</td>
                <td><input type = "text" name = "username" id="username"/></td>
             </tr>
-           <div class="warning" id="username"></div>
+           <div id="errorUser"></div>
            <tr>
                <td>Password:</td>
                <td><input type = "password" name = "password" id="password"/></td>
             </tr> 
-           <div class="warning" id="password"></div>
+          <div id="errorPass"></div>
            <tr>
                <td>Address:</td>
                <td><input type = "text" name = "address" id="address"/></td>
             </tr>
-           <div class="warning" id="address"></div>
+           <div id="errorAddress"></div>
            <tr>
                <td>City:</td>
                <td><input type = "text" name = "city" id="city"/></td>
             </tr>
-           <div class="warning" id="city"></div>
+          <div id="errorCity"></div>
            <tr>
                <td>State:</td>
                <td>
@@ -116,14 +117,14 @@
              </td>
             </tr>
            
+           <div id="errorState"></div>
            
-           <div class="warning" id="state"></div>
             
             <tr>
                <td>Zip Code:</td>
                <td><input type = "text" name = "zip" id="zip"/></td>
             </tr>
-            <div class="warning" id="zip"></div>
+           <div id="errorZip"></div>
            
            <tr>
                <td>Country:</td>
@@ -138,22 +139,23 @@
                   </select>
                </td>
             </tr>
-            <div class="warning" id="country"></div>
+           <div id="errorCountry"></div>
            
            <tr>
                <td>Comments:</td>
-               <td><input type = "text" name = "comments" /></td>
+               <td><input type = "text" name = "comments" optional /></td>
             </tr>
-            <div class="warning" id="comments"></div>
+            
            <tr>
                <td> Submit form here! </td>
                <td><input type = "submit" value = "Submit" /></td>
             </tr>
            
-           <div class="warning" id="submiterror"></div>
+           <div id="errorSubmit"></div>
            
           
-         
+            
+               
         
         
         
