@@ -12,7 +12,7 @@
   
   
    <body>
-     <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit="myFunction()">
+     <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
         
             <table cellspacing = "1" cellpadding = "1" border = "1">
             <tr>
@@ -161,7 +161,11 @@
            <div id="errorSubmit"></div>
            
           
-           
+        <script>
+        function return(validate()) {
+         alert("The form was submitted");
+            }
+          </script>   
         
         
         
