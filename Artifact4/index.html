@@ -12,39 +12,46 @@
   
   
    <body>
-     <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+     <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit="myFunction()">
         
             <table cellspacing = "1" cellpadding = "1" border = "1">
             <tr>
               <td> First Name:</td>
-              <td> <input type = "text" name = "Name" id="Name"/></td>
+              <td> <input type = "text" name = "Name" id="Name" maxlength="20" pattern="[A-Za-z]{0,}"
+              title="Only Letters!"/>
+            </td>
            </tr>
            <div id="errorName"></div>
            
            <tr>
                <td>Last Name:</td>
-               <td><input type = "text" name = "lname"  id="lname" /></td>
+               <td><input type = "text" name = "lname"  id="lname" maxlength="50" pattern="[A-Za-z]{0,}"
+             title="Only Letters!"/>
+             </td>
             </tr>
            <div id="errorlname"></div>
             
            <tr>
              <td>Email:</td>
-               <td><input type = "text" name = "email" id="email"/></td>
+               <td><input type = "text" name = "email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+             title="Please provide a complete email (@, domain)"
+             </td>
+                 
             </tr>
             <div id="errorEmail"></div>
             <tr>
                <td>Phone Number:</td>
-               <td><input type = "text" name = "phonenumber" id="phonenumber"/></td>
+               <td><input type = "text" name = "phonenumber" id="phonenumber" maxlength="15"/></td>
             </tr>
            <div id="errorPhone"></div>
            <tr>
                <td>Username:</td>
-               <td><input type = "text" name = "username" id="username"/></td>
+               <td><input type = "text" name = "username" id="username" maxlength="12"/></td>
             </tr>
            <div id="errorUser"></div>
            <tr>
                <td>Password:</td>
-               <td><input type = "password" name = "password" id="password"/></td>
+               <td><input type = "password" name = "password" id="password" maxlength="7"/></td>
             </tr> 
           <div id="errorPass"></div>
            <tr>
@@ -142,7 +149,7 @@
            <div id="errorCountry"></div>
            
            <tr>
-               <td>Comments:</td>
+               <td>Comments: (optional)</td>
                <td><input type = "text" name = "comments" optional /></td>
             </tr>
             
@@ -154,8 +161,7 @@
            <div id="errorSubmit"></div>
            
           
-            
-               
+           
         
         
         
