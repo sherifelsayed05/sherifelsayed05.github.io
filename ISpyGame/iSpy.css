@@ -1,0 +1,33 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+   
+}
+
+body {background-color: brown ;}
+
+.h1{
+  font-family: Copperplate, Papyrus, Fantasy;
+}
+
+.h2{
+  font-family: Papyrus, Fantasy;
+}
+
+.h3{
+  font-family: "Courier New", monospace;
+}
