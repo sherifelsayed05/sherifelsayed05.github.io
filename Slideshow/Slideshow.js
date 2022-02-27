@@ -1,4 +1,4 @@
-var myImages =["Capture.PNG", "Capture2.PNG","Capture3.PNG","Capture4.PNG","Capture5.PNG"];
+var myImages =["Capture.PNG", "Capture2.PNG","Capture3.PNG","Capture4.PNG","Capture6.PNG"];
 
 
 var captionImages =["Customize your rhombus","Put dots anywhere","Create your grocery list","Learn your multiplication","Create an account"];
