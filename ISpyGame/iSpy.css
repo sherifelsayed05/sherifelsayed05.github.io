@@ -1,25 +1,23 @@
 h1 {
-    text-align: center;
+  text-align: center;
   font-family: Copperplate, Fantasy;
 }
-
 h2 {
   text-align: center;
   font-family: Papyrus, Fantasy;
 }
-
 h3 {
   text-align: center;
   font-family: "Courier New", monospace;
 }
-
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
-   
 }
-
-body {background-color: brown ;}
-
+body {
+  background-color: brown;
+}
+//Assume item came from HTML by finding the element on the list
+item.style.textDecoration="line-through";
