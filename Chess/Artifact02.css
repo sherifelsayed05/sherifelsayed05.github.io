@@ -32,6 +32,12 @@ height: 720px;
 margin: auto; 
 }
 
+.row{
+ position:relative;
+ margin-left:2%;
+ margin-right:2%;
+}
+
 .white{
 border: 1px solid black;
 width: 12.5%;
