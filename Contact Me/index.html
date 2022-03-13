@@ -1,56 +1,71 @@
 <!DOCTYPE html>
 
-  <head> 
-    <link rel="Stylesheet" href="Home.css">
-<body>
-<div id="wrap">
+<head>
+  <link rel="Stylesheet" href="Home.css">
 
-<div id="header">
-<h1>Contact Me</h1>
-<h2>By Sherif Elsayed</h2>
-</div>
+  <body>
+    <div id="wrap">
 
-<div id="topmenu">
-<div class="search">
-<input type="text" style="width:220px" />
-<input type="submit" value="Search" />
-</div>
-<ul>
+      <div id="header">
+        <h1>Contact Me</h1>
+        <h2>By Sherif Elsayed</h2>
+      </div>
 
-<li><a href="https://sherifelsayed05.github.io/home/index.html" >Home</a></li>
-<li><a href="https://sherifelsayed05.github.io/About%20Me/index.html">About Me</a></li>
-<li><a href="https://sherifelsayed05.github.io/CourseWork/index.html">Course Work</a></li>
-<li><a href="https://sherifelsayed05.github.io/Artifacts/index.html">Artifacts</a></li>
-<li><a href="https://sherifelsayed05.github.io/Module%20Assignments/index.html">Module Assignments</a></li>
-<li><a href="https://sherifelsayed05.github.io/Personal%20Interests/index.html" >My Interests</a></li>
-<li><a href="https://sherifelsayed05.github.io/Contact%20Me/index.html">Contact Me</a></li>
+      <div id="topmenu">
+        <div class="search">
+          <input type="text" style="width:220px" />
+          <input type="submit" value="Search" />
+        </div>
+        <ul>
 
-</ul>
-</div>
-  <div id="content">
-<p>Please Put Your Info Below Then Click Submit!</p>
+          <li><a href="https://sherifelsayed05.github.io/home/index.html">Home</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/About%20Me/index.html">About Me</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/CourseWork/index.html">Course Work</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/Artifacts/index.html">Artifacts</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/Module%20Assignments/index.html">Module Assignments</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/Personal%20Interests/index.html">My Interests</a>
+          </li>
+          <li><a href="https://sherifelsayed05.github.io/Contact%20Me/index.html">Contact Me</a>
+          </li>
 
-<form action="/action_page.php" onsubmit="myFunction()">
-  Enter name: <input type="text" name="fname">
-  E-mail: <input type="text" name="email" value="">
-   Comment: <textarea name="comment" rows="5" cols="40"></textarea>
-  <br><br>
-  <span class="error">*  <?php echo $emailErr;?></span>
-  <br><br>
-  <input type="submit" value="Submit">
-</form>
-  </div>
+        </ul>
+      </div>
+      <div id="content">
+        <p>Please Put Your Info Below Then Click Submit!</p>
 
-<script>
-function myFunction() {
-  alert("Thank You!:)");
-}
-</script>
-  
-  <div class="clear"> </div>
+        <form action="/action_page.php" onsubmit="myFunction()">
+          
+          <label> Name: </label>
+          <input type="text" name="name"> <br>
+          
+          <label> Email: </label>
+          <input type="text" name="email"> <br>
+          
+          <label> Comments: </label>
+          <input type="text" name="comments"> <br>
+          <a href="https://sherifelsayed05.github.io/ThankYou/index.html">
+            <button> Submit </buton> <br>
+          </a>
+        </form>
+      </div>
+      
+      <script>
+        function myFunction() {
+          alert("Thank You!:)");
+        }
+      </script>
 
-<div id="footer">
+      <div class="clear"> </div>
 
-</body>
-  </head>
+      <div id="footer">
+        
+
+  </body>
+</head>
+
 </html>
