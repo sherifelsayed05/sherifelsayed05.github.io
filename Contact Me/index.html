@@ -45,10 +45,10 @@
         <form action="/action_page.php" onsubmit="myFunction()">
           
           <label> Name: </label>
-          <input type="text" name="name"> <br>
+          <input type="text" name="name" maxlength="50" pattern="[A-Za-z]{0,}" title="Only Letters!" required/> <br>
           
           <label> Email: </label>
-          <input type="text" name="email"> <br>
+          <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please provide a complete email (@,., domain)" required/> <br>
           
           <label> Comments: </label>
           <input type="text" name="comments"> <br>
