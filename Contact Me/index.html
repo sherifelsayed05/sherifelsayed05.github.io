@@ -42,33 +42,36 @@
       <div id="content">
         <p>Please Put Your Info Below Then Click Submit!</p>
 
-        <form action="/action_page.php" onsubmit="myFunction()">
+        <form> 
           
-          <label> Name: </label>
-          <input type="text" name="name" maxlength="50" pattern="[A-Za-z]{0,}" title="Only Letters!" required/> <br>
+          <label for="name"> Name: </label>
+          <input type="text" name="name" id="name" maxlength="50" pattern="[A-Za-z]{0,}" title="Only Letters!" required/> <br>
           
-          <label> Email: </label>
-          <input type="text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please provide a complete email (@,., domain)" required/> <br>
+          <label for="email"> Email: </label>
+          <input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please provide a complete email (@,., domain)" required/> <br>
           
           <label> Comments: </label>
           <input type="text" name="comments"> <br>
-          <a href="https://sherifelsayed05.github.io/ThankYou/index.html">
-            <button> Submit </buton> <br>
-          </a>
-        </form>
+          
+            <button  onClick="myOnClickFn()"> Submit </button> <br>
+          
+        
       </div>
       
-      <script>
-        function myFunction() {
-          alert("Thank You!:)");
-        }
+   
+ <script>
+     function myOnClickFn(){
+       document.location.href="https://sherifelsayed05.github.io/ThankYou/index.html" target="_blank";
+     }
       </script>
+        
+        
 
       <div class="clear"> </div>
 
       <div id="footer">
         
-
+        </form>
   </body>
 </head>
 
