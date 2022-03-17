@@ -15,15 +15,16 @@ font-family: 'JustLettersMedium';
 font-weight: normal;
 font-style: normal;
 font-size:36px;
+
 }
 
 img {
 margin-left: 5px;
-margin-top:10px;
+margin-top:15px;
 }
 
 #container {
-margin-top:20%;
+margin-top:10%;
 margin-left:10%;
 margin-right:10%;
 margin-bottom:5%;
@@ -31,8 +32,8 @@ margin-bottom:5%;
 
 .row{
 position: relative;
-margin-left:10%;
-margin-right:10%;
+margin-left:20%;
+margin-right:20%;
 }
 
 .white{
@@ -52,14 +53,14 @@ float:left;
 }
 
 #footer {
+
 bottom: 0px;
   left:0px;
-border:solid 1px;
+border: 1px;
 padding: 10px;
 margin:0px;
   background-color:#deb887	;
   text-align: center;
-z-index:10;
 width:100%;
 
 }
